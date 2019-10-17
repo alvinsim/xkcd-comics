@@ -1,0 +1,25 @@
+#+TITLE: XKCD Comics
+
+XKCD Comics is a simple REACT application that queries the [[https://xkcd.com/json.html][XKCD API]] to get the metadata of a comic.
+
+This project is something I did for fun but mainly an excuse to do something with [[https://reactjs.org/][React]].
+
+** Getting Started
+
+If you want to play around with this project, clone this repository to your local machine.
+
+*** Installing
+
+Since this is a React web application, you'd need to have =node= installed. To run or install the necessary dependencies, you'd then need either =npm= or =yarn=.
+
+Once that is sorted, you can proceed to install the dependencies using either =npm install= or =yarn install=, and start the application using =npm start= or =yarn start=.
+
+** Issues
+
+Because this application is calling an external API, your web browser will block the request. One option is to install a 'CORS' browser extension and add 'https://xkcd.com/' to the white list.
+
+On Firefox, I use [[https://addons.mozilla.org/en-US/firefox/addon/cross-domain-cors][Cross Domain - CORS]]; and on Chromium I use [[https://chrome.google.com/webstore/detail/moesif-orign-cors-changer/digfbfaphojjndkpccljibejjbppifbc][Moesif Origin & CORS Changer]].
+
+** License
+
+This project is [[https://unlicense.org/][Unlicense]] - see [[file:LICENSE]] for details.
