@@ -1,18 +1,20 @@
 // Based on the Ant Design documentation:
 // https://ant.design/docs/react/use-with-create-react-app#Advanced-Guides
 
-const CracoAlias = require("craco-alias");
+const CracoAlias = require('craco-alias');
 
 module.exports = {
-  babel: {
-    plugins: [
-      ['import', {
-        libraryName: 'antd', libraryDirectory: 'es', style:
-          'css'
-      }],
-    ],
-  },
   plugins: [
+    {
+      plugin: CracoAlias,
+      options: {
+        source: 'options',
+        aliases: {
+          '@Components': 'src/Components',
+          '@Utilities': 'src/Utilities'
+        }
+      }
+    },
     {
       plugin: {
         overrideWebpackConfig: ({ webpackConfig }) => {
@@ -89,14 +91,5 @@ module.exports = {
         },
       },
     },
-    {
-      plugin: CracoAlias,
-      options: {
-        source: "options",
-        aliases: {
-          "~Components": "src/Components"
-        }
-      }
-    }
   ],
 };
