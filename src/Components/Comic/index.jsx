@@ -1,9 +1,10 @@
 import { getMonthName, getWeekdayName } from '@Utilities/dateUtils';
-import { Spin } from 'antd';
+import { Result, Spin } from 'antd';
 import 'antd/dist/antd.less';
 import PropTypes from 'prop-types';
 import React from 'react';
 import NaviBar from './NaviBar';
+import { fetchComic } from './services';
 
 class Comic extends React.Component {
   constructor(props) {
@@ -13,6 +14,7 @@ class Comic extends React.Component {
       alt: '',
       comicId: 0,
       date: '',
+      error: '',
       img: '',
       latestComic: 0,
       loading: false,
@@ -32,51 +34,38 @@ class Comic extends React.Component {
     this.getComic();
   }
 
-  getComic = async (comicId) => {
-    const baseUrl = 'https://xkcd.com/';
-    const postfixUrl = '/info.0.json';
-    const comic = comicId ? comicId : '';
-    const apiUrl = `${baseUrl}${comic}${postfixUrl}`;
+  getComic = async (id) => {
+    this.setState({ loading: true });
 
-    try {
-      this.setState({ loading: true });
+    const data = await fetchComic(id);
 
-      const response = await fetch(apiUrl, {
-        method: 'GET'
-      });
+    const { alt, day, error, img, month, num, title, transcript, year } = data;
 
-      if (response.ok) {
-        const data = await response.json();
-        const {
-          alt, day, img, month, num, title, transcript, year
-        } = data;
-
-        const parsedDate = new Date(`${month}/${day}/${year}`);
-        const weekdayName = getWeekdayName(parsedDate.getDay());
-        const monthName = getMonthName(month - 1);
-        const formattedDate = `${weekdayName} ${monthName} ${day}, ${year}`;
-
-        let { latestComic } = this.state;
-
-        if (latestComic === 0) {
-          latestComic = num;
-        }
-
-        this.setState({
-          alt,
-          comicId: num,
-          date: formattedDate,
-          img,
-          latestComic,
-          loading: false,
-          title,
-          transcript,
-        });
-      }
-    } catch (e) {
-      this.setState({ loading: false });
-      console.error(e);
+    let formattedDate = '';
+    if (day && month && year) {
+      const parsedDate = new Date(`${month}/${day}/${year}`);
+      const weekdayName = getWeekdayName(parsedDate.getDay());
+      const monthName = getMonthName(month - 1);
+      formattedDate = `${weekdayName} ${monthName} ${day}, ${year}`;
     }
+
+    let { latestComic } = this.state;
+
+    if (latestComic === 0) {
+      latestComic = num;
+    }
+
+    this.setState({
+      alt,
+      comicId: num,
+      date: formattedDate,
+      error,
+      img,
+      latestComic,
+      loading: false,
+      title,
+      transcript,
+    });
   }
 
   getFirstComic() {
@@ -112,6 +101,7 @@ class Comic extends React.Component {
       alt,
       comicId,
       date,
+      error,
       img,
       latestComic,
       loading,
@@ -119,7 +109,15 @@ class Comic extends React.Component {
       transcript
     } = this.state;
 
-    const comicImage = loading ? <Spin /> : <img alt={alt} src={img} title={alt} />;
+    let comicImage;
+
+    if (loading) {
+      comicImage = <Spin />
+    } else if (error) {
+      comicImage = <Result status="warning" title="Oops. Comic lost in transit!" />
+    } else {
+      comicImage = <img alt={alt} src={img} title={alt} />
+    }
 
     return (
       <React.Fragment>

@@ -6,7 +6,7 @@ const NaviBar = (props) => {
   const isDisableFirstButton = () => {
     const { first, current } = props;
 
-    return first === current;
+    return first >= current;
   };
 
   const isDisablePreviousButton = () => {
