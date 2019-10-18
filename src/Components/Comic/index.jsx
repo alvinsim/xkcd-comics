@@ -1,6 +1,8 @@
 import { getMonthName, getWeekdayName } from '@Utilities/dateUtils';
+import 'antd/dist/antd.less';
 import PropTypes from 'prop-types';
 import React from 'react';
+import NaviBar from './NaviBar';
 
 class Comic extends React.Component {
   constructor(props) {
@@ -11,20 +13,31 @@ class Comic extends React.Component {
       comicId: 0,
       date: '',
       img: '',
+      latestComic: 0,
       title: '',
       transcript: '',
     };
 
     this.getComic = this.getComic.bind(this);
+    this.getFirstComic = this.getFirstComic.bind(this);
+    this.getLatestComic = this.getLatestComic.bind(this);
+    this.getNextComic = this.getNextComic.bind(this);
+    this.getPreviousComic = this.getPreviousComic.bind(this);
+    this.getRandomComic = this.getRandomComic.bind(this);
   }
 
   componentDidMount() {
     this.getComic();
   }
 
-  getComic = async () => {
+  getComic = async (comicId) => {
+    const baseUrl = 'https://xkcd.com/';
+    const postfixUrl = '/info.0.json';
+    const comic = comicId ? comicId : '';
+    const apiUrl = `${baseUrl}${comic}${postfixUrl}`;
+
     try {
-      const response = await fetch('https://xkcd.com/info.0.json', {
+      const response = await fetch(apiUrl, {
         method: 'GET'
       });
 
@@ -39,11 +52,18 @@ class Comic extends React.Component {
         const monthName = getMonthName(month - 1);
         const formattedDate = `${weekdayName} ${monthName} ${day}, ${year}`;
 
+        let { latestComic } = this.state;
+
+        if (latestComic === 0) {
+          latestComic = num;
+        }
+
         this.setState({
           alt,
           comicId: num,
           date: formattedDate,
           img,
+          latestComic,
           title,
           transcript,
         });
@@ -53,8 +73,36 @@ class Comic extends React.Component {
     }
   }
 
+  getFirstComic() {
+    this.getComic(1);
+  }
+
+  getPreviousComic() {
+    const { comicId } = this.state;
+
+    this.getComic(comicId - 1);
+  }
+
+  getRandomComic() {
+    const { latestComic: max } = this.state;
+    const min = 1;
+    const randomComic = Math.floor(Math.random() * (max - min + 1)) + min;
+
+    this.getComic(randomComic);
+  }
+
+  getNextComic() {
+    const { comicId } = this.state;
+
+    this.getComic(comicId + 1);
+  }
+
+  getLatestComic() {
+    this.getComic();
+  }
+
   render() {
-    const { alt, comicId, date, img, title, transcript } = this.state;
+    const { alt, comicId, date, img, latestComic, title, transcript } = this.state;
 
     return (
       <React.Fragment>
@@ -62,9 +110,27 @@ class Comic extends React.Component {
         <h2>{title}</h2>
         <div className="comic-container">
           <div>{date}</div>
+          <NaviBar
+            current={comicId}
+            latest={latestComic}
+            onClickFirst={this.getFirstComic}
+            onClickLatest={this.getLatestComic}
+            onClickNext={this.getNextComic}
+            onClickPrevious={this.getPreviousComic}
+            onClickRandom={this.getRandomComic}
+          />
           <div className="comic">
-            <img alt={alt} src={img} />
+            <img alt={alt} src={img} title={alt} />
           </div>
+          <NaviBar
+            current={comicId}
+            latest={latestComic}
+            onClickFirst={this.getFirstComic}
+            onClickLatest={this.getLatestComic}
+            onClickNext={this.getNextComic}
+            onClickPrevious={this.getPreviousComic}
+            onClickRandom={this.getRandomComic}
+          />
           <div className="transcript">{transcript}</div>
         </div>
       </React.Fragment>
