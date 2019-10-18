@@ -1,4 +1,5 @@
 import { getMonthName, getWeekdayName } from '@Utilities/dateUtils';
+import { Spin } from 'antd';
 import 'antd/dist/antd.less';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -14,6 +15,7 @@ class Comic extends React.Component {
       date: '',
       img: '',
       latestComic: 0,
+      loading: false,
       title: '',
       transcript: '',
     };
@@ -37,6 +39,8 @@ class Comic extends React.Component {
     const apiUrl = `${baseUrl}${comic}${postfixUrl}`;
 
     try {
+      this.setState({ loading: true });
+
       const response = await fetch(apiUrl, {
         method: 'GET'
       });
@@ -64,11 +68,13 @@ class Comic extends React.Component {
           date: formattedDate,
           img,
           latestComic,
+          loading: false,
           title,
           transcript,
         });
       }
     } catch (e) {
+      this.setState({ loading: false });
       console.error(e);
     }
   }
@@ -102,7 +108,18 @@ class Comic extends React.Component {
   }
 
   render() {
-    const { alt, comicId, date, img, latestComic, title, transcript } = this.state;
+    const {
+      alt,
+      comicId,
+      date,
+      img,
+      latestComic,
+      loading,
+      title,
+      transcript
+    } = this.state;
+
+    const comicImage = loading ? <Spin /> : <img alt={alt} src={img} title={alt} />;
 
     return (
       <React.Fragment>
@@ -120,7 +137,7 @@ class Comic extends React.Component {
             onClickRandom={this.getRandomComic}
           />
           <div className="comic">
-            <img alt={alt} src={img} title={alt} />
+            {comicImage}
           </div>
           <NaviBar
             current={comicId}
