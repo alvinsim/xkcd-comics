@@ -1,0 +1,1292 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders a latest comic 1`] = `
+Array [
+  <h1>
+    XKCD Comic
+  </h1>,
+  <h2>
+    53 Cards
+  </h2>,
+  <div
+    className="comic-container"
+  >
+    <div>
+      18 October, 2019
+    </div>
+    <div
+      className="navi-bar"
+    >
+      <div
+        className="ant-btn-group"
+      >
+        <button
+          className="ant-btn"
+          disabled={false}
+          onClick={[Function]}
+          title="first"
+          type="button"
+        >
+          <i
+            aria-label="icon: double-left"
+            className="anticon anticon-double-left"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="double-left"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M272.9 512l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L186.8 492.3a31.99 31.99 0 0 0 0 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H532c6.7 0 10.4-7.7 6.3-12.9L272.9 512zm304 0l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L490.8 492.3a31.99 31.99 0 0 0 0 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H836c6.7 0 10.4-7.7 6.3-12.9L576.9 512z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={false}
+          onClick={[Function]}
+          title="previous"
+          type="button"
+        >
+          <i
+            aria-label="icon: left"
+            className="anticon anticon-left"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="left"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          onClick={[Function]}
+          title="random"
+          type="button"
+        >
+          <i
+            aria-label="icon: question"
+            className="anticon anticon-question"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="question"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M764 280.9c-14-30.6-33.9-58.1-59.3-81.6C653.1 151.4 584.6 125 512 125s-141.1 26.4-192.7 74.2c-25.4 23.6-45.3 51-59.3 81.7-14.6 32-22 65.9-22 100.9v27c0 6.2 5 11.2 11.2 11.2h54c6.2 0 11.2-5 11.2-11.2v-27c0-99.5 88.6-180.4 197.6-180.4s197.6 80.9 197.6 180.4c0 40.8-14.5 79.2-42 111.2-27.2 31.7-65.6 54.4-108.1 64-24.3 5.5-46.2 19.2-61.7 38.8a110.85 110.85 0 0 0-23.9 68.6v31.4c0 6.2 5 11.2 11.2 11.2h54c6.2 0 11.2-5 11.2-11.2v-31.4c0-15.7 10.9-29.5 26-32.9 58.4-13.2 111.4-44.7 149.3-88.7 19.1-22.3 34-47.1 44.3-74 10.7-27.9 16.1-57.2 16.1-87 0-35-7.4-69-22-100.9zM512 787c-30.9 0-56 25.1-56 56s25.1 56 56 56 56-25.1 56-56-25.1-56-56-56z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={true}
+          onClick={[Function]}
+          title="next"
+          type="button"
+        >
+          <i
+            aria-label="icon: right"
+            className="anticon anticon-right"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="right"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={true}
+          onClick={[Function]}
+          title="latest"
+          type="button"
+        >
+          <i
+            aria-label="icon: double-right"
+            className="anticon anticon-double-right"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="double-right"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M533.2 492.3L277.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H188c-6.7 0-10.4 7.7-6.3 12.9L447.1 512 181.7 851.1A7.98 7.98 0 0 0 188 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5zm304 0L581.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H492c-6.7 0-10.4 7.7-6.3 12.9L751.1 512 485.7 851.1A7.98 7.98 0 0 0 492 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5z"
+              />
+            </svg>
+          </i>
+        </button>
+      </div>
+    </div>
+    <div
+      className="comic"
+    >
+      <img
+        alt="Well, there's one right here at the bottom, where it says '53.'"
+        src="https://imgs.xkcd.com/comics/53_cards.png"
+        title="Well, there's one right here at the bottom, where it says '53.'"
+      />
+    </div>
+    <div
+      className="navi-bar"
+    >
+      <div
+        className="ant-btn-group"
+      >
+        <button
+          className="ant-btn"
+          disabled={false}
+          onClick={[Function]}
+          title="first"
+          type="button"
+        >
+          <i
+            aria-label="icon: double-left"
+            className="anticon anticon-double-left"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="double-left"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M272.9 512l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L186.8 492.3a31.99 31.99 0 0 0 0 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H532c6.7 0 10.4-7.7 6.3-12.9L272.9 512zm304 0l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L490.8 492.3a31.99 31.99 0 0 0 0 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H836c6.7 0 10.4-7.7 6.3-12.9L576.9 512z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={false}
+          onClick={[Function]}
+          title="previous"
+          type="button"
+        >
+          <i
+            aria-label="icon: left"
+            className="anticon anticon-left"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="left"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          onClick={[Function]}
+          title="random"
+          type="button"
+        >
+          <i
+            aria-label="icon: question"
+            className="anticon anticon-question"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="question"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M764 280.9c-14-30.6-33.9-58.1-59.3-81.6C653.1 151.4 584.6 125 512 125s-141.1 26.4-192.7 74.2c-25.4 23.6-45.3 51-59.3 81.7-14.6 32-22 65.9-22 100.9v27c0 6.2 5 11.2 11.2 11.2h54c6.2 0 11.2-5 11.2-11.2v-27c0-99.5 88.6-180.4 197.6-180.4s197.6 80.9 197.6 180.4c0 40.8-14.5 79.2-42 111.2-27.2 31.7-65.6 54.4-108.1 64-24.3 5.5-46.2 19.2-61.7 38.8a110.85 110.85 0 0 0-23.9 68.6v31.4c0 6.2 5 11.2 11.2 11.2h54c6.2 0 11.2-5 11.2-11.2v-31.4c0-15.7 10.9-29.5 26-32.9 58.4-13.2 111.4-44.7 149.3-88.7 19.1-22.3 34-47.1 44.3-74 10.7-27.9 16.1-57.2 16.1-87 0-35-7.4-69-22-100.9zM512 787c-30.9 0-56 25.1-56 56s25.1 56 56 56 56-25.1 56-56-25.1-56-56-56z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={true}
+          onClick={[Function]}
+          title="next"
+          type="button"
+        >
+          <i
+            aria-label="icon: right"
+            className="anticon anticon-right"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="right"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={true}
+          onClick={[Function]}
+          title="latest"
+          type="button"
+        >
+          <i
+            aria-label="icon: double-right"
+            className="anticon anticon-double-right"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="double-right"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M533.2 492.3L277.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H188c-6.7 0-10.4 7.7-6.3 12.9L447.1 512 181.7 851.1A7.98 7.98 0 0 0 188 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5zm304 0L581.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H492c-6.7 0-10.4 7.7-6.3 12.9L751.1 512 485.7 851.1A7.98 7.98 0 0 0 492 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5z"
+              />
+            </svg>
+          </i>
+        </button>
+      </div>
+    </div>
+    <div
+      className="transcript"
+    >
+      
+    </div>
+  </div>,
+]
+`;
+
+exports[`Renders a not latest comic 1`] = `
+Array [
+  <h1>
+    XKCD Comic
+  </h1>,
+  <h2>
+    xkcd Phone 2000
+  </h2>,
+  <div
+    className="comic-container"
+  >
+    <div>
+      30 May, 2018
+    </div>
+    <div
+      className="navi-bar"
+    >
+      <div
+        className="ant-btn-group"
+      >
+        <button
+          className="ant-btn"
+          disabled={false}
+          onClick={[Function]}
+          title="first"
+          type="button"
+        >
+          <i
+            aria-label="icon: double-left"
+            className="anticon anticon-double-left"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="double-left"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M272.9 512l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L186.8 492.3a31.99 31.99 0 0 0 0 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H532c6.7 0 10.4-7.7 6.3-12.9L272.9 512zm304 0l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L490.8 492.3a31.99 31.99 0 0 0 0 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H836c6.7 0 10.4-7.7 6.3-12.9L576.9 512z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={false}
+          onClick={[Function]}
+          title="previous"
+          type="button"
+        >
+          <i
+            aria-label="icon: left"
+            className="anticon anticon-left"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="left"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          onClick={[Function]}
+          title="random"
+          type="button"
+        >
+          <i
+            aria-label="icon: question"
+            className="anticon anticon-question"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="question"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M764 280.9c-14-30.6-33.9-58.1-59.3-81.6C653.1 151.4 584.6 125 512 125s-141.1 26.4-192.7 74.2c-25.4 23.6-45.3 51-59.3 81.7-14.6 32-22 65.9-22 100.9v27c0 6.2 5 11.2 11.2 11.2h54c6.2 0 11.2-5 11.2-11.2v-27c0-99.5 88.6-180.4 197.6-180.4s197.6 80.9 197.6 180.4c0 40.8-14.5 79.2-42 111.2-27.2 31.7-65.6 54.4-108.1 64-24.3 5.5-46.2 19.2-61.7 38.8a110.85 110.85 0 0 0-23.9 68.6v31.4c0 6.2 5 11.2 11.2 11.2h54c6.2 0 11.2-5 11.2-11.2v-31.4c0-15.7 10.9-29.5 26-32.9 58.4-13.2 111.4-44.7 149.3-88.7 19.1-22.3 34-47.1 44.3-74 10.7-27.9 16.1-57.2 16.1-87 0-35-7.4-69-22-100.9zM512 787c-30.9 0-56 25.1-56 56s25.1 56 56 56 56-25.1 56-56-25.1-56-56-56z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={false}
+          onClick={[Function]}
+          title="next"
+          type="button"
+        >
+          <i
+            aria-label="icon: right"
+            className="anticon anticon-right"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="right"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={false}
+          onClick={[Function]}
+          title="latest"
+          type="button"
+        >
+          <i
+            aria-label="icon: double-right"
+            className="anticon anticon-double-right"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="double-right"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M533.2 492.3L277.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H188c-6.7 0-10.4 7.7-6.3 12.9L447.1 512 181.7 851.1A7.98 7.98 0 0 0 188 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5zm304 0L581.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H492c-6.7 0-10.4 7.7-6.3 12.9L751.1 512 485.7 851.1A7.98 7.98 0 0 0 492 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5z"
+              />
+            </svg>
+          </i>
+        </button>
+      </div>
+    </div>
+    <div
+      className="comic"
+    >
+      <img
+        alt="Our retina display features hundreds of pixels per inch in the central fovea region"
+        src="https://imgs.xkcd.com/comics/xkcd_phone_2000.png"
+        title="Our retina display features hundreds of pixels per inch in the central fovea region"
+      />
+    </div>
+    <div
+      className="navi-bar"
+    >
+      <div
+        className="ant-btn-group"
+      >
+        <button
+          className="ant-btn"
+          disabled={false}
+          onClick={[Function]}
+          title="first"
+          type="button"
+        >
+          <i
+            aria-label="icon: double-left"
+            className="anticon anticon-double-left"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="double-left"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M272.9 512l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L186.8 492.3a31.99 31.99 0 0 0 0 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H532c6.7 0 10.4-7.7 6.3-12.9L272.9 512zm304 0l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L490.8 492.3a31.99 31.99 0 0 0 0 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H836c6.7 0 10.4-7.7 6.3-12.9L576.9 512z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={false}
+          onClick={[Function]}
+          title="previous"
+          type="button"
+        >
+          <i
+            aria-label="icon: left"
+            className="anticon anticon-left"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="left"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          onClick={[Function]}
+          title="random"
+          type="button"
+        >
+          <i
+            aria-label="icon: question"
+            className="anticon anticon-question"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="question"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M764 280.9c-14-30.6-33.9-58.1-59.3-81.6C653.1 151.4 584.6 125 512 125s-141.1 26.4-192.7 74.2c-25.4 23.6-45.3 51-59.3 81.7-14.6 32-22 65.9-22 100.9v27c0 6.2 5 11.2 11.2 11.2h54c6.2 0 11.2-5 11.2-11.2v-27c0-99.5 88.6-180.4 197.6-180.4s197.6 80.9 197.6 180.4c0 40.8-14.5 79.2-42 111.2-27.2 31.7-65.6 54.4-108.1 64-24.3 5.5-46.2 19.2-61.7 38.8a110.85 110.85 0 0 0-23.9 68.6v31.4c0 6.2 5 11.2 11.2 11.2h54c6.2 0 11.2-5 11.2-11.2v-31.4c0-15.7 10.9-29.5 26-32.9 58.4-13.2 111.4-44.7 149.3-88.7 19.1-22.3 34-47.1 44.3-74 10.7-27.9 16.1-57.2 16.1-87 0-35-7.4-69-22-100.9zM512 787c-30.9 0-56 25.1-56 56s25.1 56 56 56 56-25.1 56-56-25.1-56-56-56z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={false}
+          onClick={[Function]}
+          title="next"
+          type="button"
+        >
+          <i
+            aria-label="icon: right"
+            className="anticon anticon-right"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="right"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={false}
+          onClick={[Function]}
+          title="latest"
+          type="button"
+        >
+          <i
+            aria-label="icon: double-right"
+            className="anticon anticon-double-right"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="double-right"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M533.2 492.3L277.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H188c-6.7 0-10.4 7.7-6.3 12.9L447.1 512 181.7 851.1A7.98 7.98 0 0 0 188 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5zm304 0L581.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H492c-6.7 0-10.4 7.7-6.3 12.9L751.1 512 485.7 851.1A7.98 7.98 0 0 0 492 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5z"
+              />
+            </svg>
+          </i>
+        </button>
+      </div>
+    </div>
+    <div
+      className="transcript"
+    >
+      
+    </div>
+  </div>,
+]
+`;
+
+exports[`Renders an error 1`] = `
+Array [
+  <h1>
+    XKCD Comic
+  </h1>,
+  <h2>
+    
+  </h2>,
+  <div
+    className="comic-container"
+  >
+    <div>
+      
+    </div>
+    <div
+      className="navi-bar"
+    >
+      <div
+        className="ant-btn-group"
+      >
+        <button
+          className="ant-btn"
+          disabled={true}
+          onClick={[Function]}
+          title="first"
+          type="button"
+        >
+          <i
+            aria-label="icon: double-left"
+            className="anticon anticon-double-left"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="double-left"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M272.9 512l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L186.8 492.3a31.99 31.99 0 0 0 0 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H532c6.7 0 10.4-7.7 6.3-12.9L272.9 512zm304 0l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L490.8 492.3a31.99 31.99 0 0 0 0 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H836c6.7 0 10.4-7.7 6.3-12.9L576.9 512z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={true}
+          onClick={[Function]}
+          title="previous"
+          type="button"
+        >
+          <i
+            aria-label="icon: left"
+            className="anticon anticon-left"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="left"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          onClick={[Function]}
+          title="random"
+          type="button"
+        >
+          <i
+            aria-label="icon: question"
+            className="anticon anticon-question"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="question"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M764 280.9c-14-30.6-33.9-58.1-59.3-81.6C653.1 151.4 584.6 125 512 125s-141.1 26.4-192.7 74.2c-25.4 23.6-45.3 51-59.3 81.7-14.6 32-22 65.9-22 100.9v27c0 6.2 5 11.2 11.2 11.2h54c6.2 0 11.2-5 11.2-11.2v-27c0-99.5 88.6-180.4 197.6-180.4s197.6 80.9 197.6 180.4c0 40.8-14.5 79.2-42 111.2-27.2 31.7-65.6 54.4-108.1 64-24.3 5.5-46.2 19.2-61.7 38.8a110.85 110.85 0 0 0-23.9 68.6v31.4c0 6.2 5 11.2 11.2 11.2h54c6.2 0 11.2-5 11.2-11.2v-31.4c0-15.7 10.9-29.5 26-32.9 58.4-13.2 111.4-44.7 149.3-88.7 19.1-22.3 34-47.1 44.3-74 10.7-27.9 16.1-57.2 16.1-87 0-35-7.4-69-22-100.9zM512 787c-30.9 0-56 25.1-56 56s25.1 56 56 56 56-25.1 56-56-25.1-56-56-56z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={true}
+          onClick={[Function]}
+          title="next"
+          type="button"
+        >
+          <i
+            aria-label="icon: right"
+            className="anticon anticon-right"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="right"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={true}
+          onClick={[Function]}
+          title="latest"
+          type="button"
+        >
+          <i
+            aria-label="icon: double-right"
+            className="anticon anticon-double-right"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="double-right"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M533.2 492.3L277.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H188c-6.7 0-10.4 7.7-6.3 12.9L447.1 512 181.7 851.1A7.98 7.98 0 0 0 188 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5zm304 0L581.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H492c-6.7 0-10.4 7.7-6.3 12.9L751.1 512 485.7 851.1A7.98 7.98 0 0 0 492 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5z"
+              />
+            </svg>
+          </i>
+        </button>
+      </div>
+    </div>
+    <div
+      className="comic"
+    >
+      <div
+        className="ant-result ant-result-warning"
+      >
+        <div
+          className="ant-result-icon"
+        >
+          <i
+            aria-label="icon: warning"
+            className="anticon anticon-warning"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="warning"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M955.7 856l-416-720c-6.2-10.7-16.9-16-27.7-16s-21.6 5.3-27.7 16l-416 720C56 877.4 71.4 904 96 904h832c24.6 0 40-26.6 27.7-48zM480 416c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v184c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V416zm32 352a48.01 48.01 0 0 1 0-96 48.01 48.01 0 0 1 0 96z"
+              />
+            </svg>
+          </i>
+        </div>
+        <div
+          className="ant-result-title"
+        >
+          Oops. Comic lost in transit!
+        </div>
+      </div>
+    </div>
+    <div
+      className="navi-bar"
+    >
+      <div
+        className="ant-btn-group"
+      >
+        <button
+          className="ant-btn"
+          disabled={true}
+          onClick={[Function]}
+          title="first"
+          type="button"
+        >
+          <i
+            aria-label="icon: double-left"
+            className="anticon anticon-double-left"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="double-left"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M272.9 512l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L186.8 492.3a31.99 31.99 0 0 0 0 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H532c6.7 0 10.4-7.7 6.3-12.9L272.9 512zm304 0l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L490.8 492.3a31.99 31.99 0 0 0 0 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H836c6.7 0 10.4-7.7 6.3-12.9L576.9 512z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={true}
+          onClick={[Function]}
+          title="previous"
+          type="button"
+        >
+          <i
+            aria-label="icon: left"
+            className="anticon anticon-left"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="left"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          onClick={[Function]}
+          title="random"
+          type="button"
+        >
+          <i
+            aria-label="icon: question"
+            className="anticon anticon-question"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="question"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M764 280.9c-14-30.6-33.9-58.1-59.3-81.6C653.1 151.4 584.6 125 512 125s-141.1 26.4-192.7 74.2c-25.4 23.6-45.3 51-59.3 81.7-14.6 32-22 65.9-22 100.9v27c0 6.2 5 11.2 11.2 11.2h54c6.2 0 11.2-5 11.2-11.2v-27c0-99.5 88.6-180.4 197.6-180.4s197.6 80.9 197.6 180.4c0 40.8-14.5 79.2-42 111.2-27.2 31.7-65.6 54.4-108.1 64-24.3 5.5-46.2 19.2-61.7 38.8a110.85 110.85 0 0 0-23.9 68.6v31.4c0 6.2 5 11.2 11.2 11.2h54c6.2 0 11.2-5 11.2-11.2v-31.4c0-15.7 10.9-29.5 26-32.9 58.4-13.2 111.4-44.7 149.3-88.7 19.1-22.3 34-47.1 44.3-74 10.7-27.9 16.1-57.2 16.1-87 0-35-7.4-69-22-100.9zM512 787c-30.9 0-56 25.1-56 56s25.1 56 56 56 56-25.1 56-56-25.1-56-56-56z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={true}
+          onClick={[Function]}
+          title="next"
+          type="button"
+        >
+          <i
+            aria-label="icon: right"
+            className="anticon anticon-right"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="right"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={true}
+          onClick={[Function]}
+          title="latest"
+          type="button"
+        >
+          <i
+            aria-label="icon: double-right"
+            className="anticon anticon-double-right"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="double-right"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M533.2 492.3L277.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H188c-6.7 0-10.4 7.7-6.3 12.9L447.1 512 181.7 851.1A7.98 7.98 0 0 0 188 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5zm304 0L581.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H492c-6.7 0-10.4 7.7-6.3 12.9L751.1 512 485.7 851.1A7.98 7.98 0 0 0 492 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5z"
+              />
+            </svg>
+          </i>
+        </button>
+      </div>
+    </div>
+    <div
+      className="transcript"
+    >
+      
+    </div>
+  </div>,
+]
+`;
+
+exports[`Renders the first comic 1`] = `
+Array [
+  <h1>
+    XKCD Comic
+  </h1>,
+  <h2>
+    Barrel - Part 1
+  </h2>,
+  <div
+    className="comic-container"
+  >
+    <div>
+      1 January, 2006
+    </div>
+    <div
+      className="navi-bar"
+    >
+      <div
+        className="ant-btn-group"
+      >
+        <button
+          className="ant-btn"
+          disabled={true}
+          onClick={[Function]}
+          title="first"
+          type="button"
+        >
+          <i
+            aria-label="icon: double-left"
+            className="anticon anticon-double-left"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="double-left"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M272.9 512l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L186.8 492.3a31.99 31.99 0 0 0 0 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H532c6.7 0 10.4-7.7 6.3-12.9L272.9 512zm304 0l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L490.8 492.3a31.99 31.99 0 0 0 0 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H836c6.7 0 10.4-7.7 6.3-12.9L576.9 512z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={true}
+          onClick={[Function]}
+          title="previous"
+          type="button"
+        >
+          <i
+            aria-label="icon: left"
+            className="anticon anticon-left"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="left"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          onClick={[Function]}
+          title="random"
+          type="button"
+        >
+          <i
+            aria-label="icon: question"
+            className="anticon anticon-question"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="question"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M764 280.9c-14-30.6-33.9-58.1-59.3-81.6C653.1 151.4 584.6 125 512 125s-141.1 26.4-192.7 74.2c-25.4 23.6-45.3 51-59.3 81.7-14.6 32-22 65.9-22 100.9v27c0 6.2 5 11.2 11.2 11.2h54c6.2 0 11.2-5 11.2-11.2v-27c0-99.5 88.6-180.4 197.6-180.4s197.6 80.9 197.6 180.4c0 40.8-14.5 79.2-42 111.2-27.2 31.7-65.6 54.4-108.1 64-24.3 5.5-46.2 19.2-61.7 38.8a110.85 110.85 0 0 0-23.9 68.6v31.4c0 6.2 5 11.2 11.2 11.2h54c6.2 0 11.2-5 11.2-11.2v-31.4c0-15.7 10.9-29.5 26-32.9 58.4-13.2 111.4-44.7 149.3-88.7 19.1-22.3 34-47.1 44.3-74 10.7-27.9 16.1-57.2 16.1-87 0-35-7.4-69-22-100.9zM512 787c-30.9 0-56 25.1-56 56s25.1 56 56 56 56-25.1 56-56-25.1-56-56-56z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={false}
+          onClick={[Function]}
+          title="next"
+          type="button"
+        >
+          <i
+            aria-label="icon: right"
+            className="anticon anticon-right"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="right"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={false}
+          onClick={[Function]}
+          title="latest"
+          type="button"
+        >
+          <i
+            aria-label="icon: double-right"
+            className="anticon anticon-double-right"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="double-right"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M533.2 492.3L277.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H188c-6.7 0-10.4 7.7-6.3 12.9L447.1 512 181.7 851.1A7.98 7.98 0 0 0 188 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5zm304 0L581.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H492c-6.7 0-10.4 7.7-6.3 12.9L751.1 512 485.7 851.1A7.98 7.98 0 0 0 492 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5z"
+              />
+            </svg>
+          </i>
+        </button>
+      </div>
+    </div>
+    <div
+      className="comic"
+    >
+      <img
+        alt="Don't we all."
+        src="https://imgs.xkcd.com/comics/barrel_cropped_(1).png"
+        title="Don't we all."
+      />
+    </div>
+    <div
+      className="navi-bar"
+    >
+      <div
+        className="ant-btn-group"
+      >
+        <button
+          className="ant-btn"
+          disabled={true}
+          onClick={[Function]}
+          title="first"
+          type="button"
+        >
+          <i
+            aria-label="icon: double-left"
+            className="anticon anticon-double-left"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="double-left"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M272.9 512l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L186.8 492.3a31.99 31.99 0 0 0 0 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H532c6.7 0 10.4-7.7 6.3-12.9L272.9 512zm304 0l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L490.8 492.3a31.99 31.99 0 0 0 0 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H836c6.7 0 10.4-7.7 6.3-12.9L576.9 512z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={true}
+          onClick={[Function]}
+          title="previous"
+          type="button"
+        >
+          <i
+            aria-label="icon: left"
+            className="anticon anticon-left"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="left"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          onClick={[Function]}
+          title="random"
+          type="button"
+        >
+          <i
+            aria-label="icon: question"
+            className="anticon anticon-question"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="question"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M764 280.9c-14-30.6-33.9-58.1-59.3-81.6C653.1 151.4 584.6 125 512 125s-141.1 26.4-192.7 74.2c-25.4 23.6-45.3 51-59.3 81.7-14.6 32-22 65.9-22 100.9v27c0 6.2 5 11.2 11.2 11.2h54c6.2 0 11.2-5 11.2-11.2v-27c0-99.5 88.6-180.4 197.6-180.4s197.6 80.9 197.6 180.4c0 40.8-14.5 79.2-42 111.2-27.2 31.7-65.6 54.4-108.1 64-24.3 5.5-46.2 19.2-61.7 38.8a110.85 110.85 0 0 0-23.9 68.6v31.4c0 6.2 5 11.2 11.2 11.2h54c6.2 0 11.2-5 11.2-11.2v-31.4c0-15.7 10.9-29.5 26-32.9 58.4-13.2 111.4-44.7 149.3-88.7 19.1-22.3 34-47.1 44.3-74 10.7-27.9 16.1-57.2 16.1-87 0-35-7.4-69-22-100.9zM512 787c-30.9 0-56 25.1-56 56s25.1 56 56 56 56-25.1 56-56-25.1-56-56-56z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={false}
+          onClick={[Function]}
+          title="next"
+          type="button"
+        >
+          <i
+            aria-label="icon: right"
+            className="anticon anticon-right"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="right"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"
+              />
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn"
+          disabled={false}
+          onClick={[Function]}
+          title="latest"
+          type="button"
+        >
+          <i
+            aria-label="icon: double-right"
+            className="anticon anticon-double-right"
+          >
+            <svg
+              aria-hidden="true"
+              className=""
+              data-icon="double-right"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M533.2 492.3L277.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H188c-6.7 0-10.4 7.7-6.3 12.9L447.1 512 181.7 851.1A7.98 7.98 0 0 0 188 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5zm304 0L581.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H492c-6.7 0-10.4 7.7-6.3 12.9L751.1 512 485.7 851.1A7.98 7.98 0 0 0 492 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5z"
+              />
+            </svg>
+          </i>
+        </button>
+      </div>
+    </div>
+    <div
+      className="transcript"
+    >
+      
+    </div>
+  </div>,
+]
+`;

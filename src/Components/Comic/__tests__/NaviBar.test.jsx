@@ -1,5 +1,5 @@
-import React from 'react';
 import NaviBar from '@Components/Comic/NaviBar';
+import React from 'react';
 import renderer from 'react-test-renderer';
 
 test('Next and Latest buttons are disabled when current comic is the latest', () => {
