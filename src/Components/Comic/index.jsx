@@ -1,9 +1,8 @@
 import { getMonthName, getWeekdayName } from '@Utilities/dateUtils';
-import { Result, Spin } from 'antd';
 import 'antd/dist/antd.less';
 import PropTypes from 'prop-types';
 import React from 'react';
-import NaviBar from './NaviBar';
+import Render from './Render';
 import { fetchComic } from './services';
 
 class Comic extends React.Component {
@@ -23,11 +22,6 @@ class Comic extends React.Component {
     };
 
     this.getComic = this.getComic.bind(this);
-    this.getFirstComic = this.getFirstComic.bind(this);
-    this.getLatestComic = this.getLatestComic.bind(this);
-    this.getNextComic = this.getNextComic.bind(this);
-    this.getPreviousComic = this.getPreviousComic.bind(this);
-    this.getRandomComic = this.getRandomComic.bind(this);
   }
 
   componentDidMount() {
@@ -68,34 +62,6 @@ class Comic extends React.Component {
     });
   }
 
-  getFirstComic() {
-    this.getComic(1);
-  }
-
-  getPreviousComic() {
-    const { comicId } = this.state;
-
-    this.getComic(comicId - 1);
-  }
-
-  getRandomComic() {
-    const { latestComic: max } = this.state;
-    const min = 1;
-    const randomComic = Math.floor(Math.random() * (max - min + 1)) + min;
-
-    this.getComic(randomComic);
-  }
-
-  getNextComic() {
-    const { comicId } = this.state;
-
-    this.getComic(comicId + 1);
-  }
-
-  getLatestComic() {
-    this.getComic();
-  }
-
   render() {
     const {
       alt,
@@ -109,46 +75,19 @@ class Comic extends React.Component {
       transcript
     } = this.state;
 
-    let comicImage;
-
-    if (loading) {
-      comicImage = <Spin />
-    } else if (error) {
-      comicImage = <Result status="warning" title="Oops. Comic lost in transit!" />
-    } else {
-      comicImage = <img alt={alt} src={img} title={alt} />
-    }
-
     return (
-      <React.Fragment>
-        <h1>XKCD Comic</h1>
-        <h2>{title}</h2>
-        <div className="comic-container">
-          <div>{date}</div>
-          <NaviBar
-            current={comicId}
-            latest={latestComic}
-            onClickFirst={this.getFirstComic}
-            onClickLatest={this.getLatestComic}
-            onClickNext={this.getNextComic}
-            onClickPrevious={this.getPreviousComic}
-            onClickRandom={this.getRandomComic}
-          />
-          <div className="comic">
-            {comicImage}
-          </div>
-          <NaviBar
-            current={comicId}
-            latest={latestComic}
-            onClickFirst={this.getFirstComic}
-            onClickLatest={this.getLatestComic}
-            onClickNext={this.getNextComic}
-            onClickPrevious={this.getPreviousComic}
-            onClickRandom={this.getRandomComic}
-          />
-          <div className="transcript">{transcript}</div>
-        </div>
-      </React.Fragment>
+      <Render
+        alt={alt}
+        comicId={comicId}
+        date={date}
+        error={error}
+        getComic={this.getComic}
+        img={img}
+        latestComic={latestComic}
+        loading={loading}
+        title={title}
+        transcript={transcript}
+      />
     );
   }
 }

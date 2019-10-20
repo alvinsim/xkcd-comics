@@ -7,8 +7,13 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+		"lint": "eslint.js src/"
   },
+	"pre-commit": [
+		"lint",
+		"test"
+	],
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -41,6 +46,7 @@
     "jest": "^24.9.0",
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
+    "pre-commit": "^1.2.2",
     "prop-types": "^15.7.2",
     "react-test-renderer": "^16.10.2"
   }
