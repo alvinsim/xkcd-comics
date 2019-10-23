@@ -6,12 +6,12 @@ import {
   removeFavourite,
 } from './actions';
 
-function* addFavouriteTrigger(action) {
+export function* addFavouriteTrigger(action) {
   const { comicId, date, img, title, transcript } = action;
   yield put(addFavourite(comicId, date, img, title, transcript));
 }
 
-function* removeFavouriteTrigger(action) {
+export function* removeFavouriteTrigger(action) {
   const { comicId } = action;
   yield put(removeFavourite(comicId));
 }

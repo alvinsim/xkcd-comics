@@ -48,6 +48,7 @@
     "craco-alias": "^1.0.4",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-import": "^0.13.0",
+    "eslint-plugin-jest": "^22.20.0",
     "eslint-plugin-react": "^7.16.0",
     "jest": "^24.9.0",
     "less": "^3.10.3",
@@ -55,7 +56,8 @@
     "pre-commit": "^1.2.2",
     "prop-types": "^15.7.2",
     "react-test-renderer": "^16.10.2",
-    "redux-devtools": "^3.5.0"
+    "redux-devtools": "^3.5.0",
+    "redux-saga-test-plan": "^4.0.0-rc.3"
   },
   "jest": {
     "transform": {

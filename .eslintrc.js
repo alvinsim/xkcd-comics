@@ -6,7 +6,9 @@ module.exports = {
   },
   "env": {
     "browser": true,
-    "node": true
+    "jest/globals": true,
+    "mocha": true,
+    "node": true,
   },
   "extends": [
     "eslint:recommended",
@@ -24,6 +26,7 @@ module.exports = {
     "sourceType": "module"
   },
   "plugins": [
+    "jest",
     "react"
   ],
   "rules": {
