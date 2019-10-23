@@ -1,9 +1,17 @@
 module.exports = {
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+  },
   "env": {
     "browser": true,
     "node": true
   },
-  "extends": "eslint:recommended",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"

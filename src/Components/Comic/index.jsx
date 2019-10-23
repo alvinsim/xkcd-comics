@@ -28,7 +28,7 @@ class Comic extends React.Component {
     this.getComic();
   }
 
-  getComic = async (id) => {
+  async getComic(id) {
     this.setState({ loading: true });
 
     const data = await fetchComic(id);
@@ -74,19 +74,22 @@ class Comic extends React.Component {
       title,
       transcript
     } = this.state;
+    const metadata = {
+      alt,
+      comicId,
+      date,
+      error,
+      img,
+      latestComic,
+      loading,
+      title,
+      transcript,
+    };
 
     return (
       <Render
-        alt={alt}
-        comicId={comicId}
-        date={date}
-        error={error}
         getComic={this.getComic}
-        img={img}
-        latestComic={latestComic}
-        loading={loading}
-        title={title}
-        transcript={transcript}
+        metadata={metadata}
       />
     );
   }

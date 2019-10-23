@@ -6,14 +6,13 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test --env=jsdom",
+    "test": "craco test --env=jsdom --no-watchman",
     "eject": "react-scripts eject",
-		"lint": "eslint.js src/"
+    "lint": "eslint.js src/"
   },
-	"pre-commit": [
-		"lint",
-		"test"
-	],
+  "pre-commit": [
+    "lint"
+  ],
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -33,12 +32,19 @@
     "antd": "^3.24.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-redux": "^7.1.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "redux": "^4.0.4",
+    "redux-mock-store": "^1.5.3",
+    "redux-saga": "^1.1.1"
   },
   "devDependencies": {
     "@craco/craco": "^5.5.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.9.0",
     "babel-plugin-import": "^1.12.2",
+    "babel-preset-react": "^6.24.1",
     "craco-alias": "^1.0.4",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-import": "^0.13.0",
@@ -48,6 +54,12 @@
     "less-loader": "^5.0.0",
     "pre-commit": "^1.2.2",
     "prop-types": "^15.7.2",
-    "react-test-renderer": "^16.10.2"
+    "react-test-renderer": "^16.10.2",
+    "redux-devtools": "^3.5.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
   }
 }
