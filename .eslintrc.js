@@ -1,9 +1,19 @@
 module.exports = {
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+  },
   "env": {
     "browser": true,
-    "node": true
+    "jest/globals": true,
+    "mocha": true,
+    "node": true,
   },
-  "extends": "eslint:recommended",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -16,6 +26,7 @@ module.exports = {
     "sourceType": "module"
   },
   "plugins": [
+    "jest",
     "react"
   ],
   "rules": {

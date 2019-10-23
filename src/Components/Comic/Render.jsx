@@ -1,9 +1,17 @@
-import { Result, Spin } from 'antd';
+import { Button, Icon, Result, Spin } from 'antd';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { connect } from 'react-redux';
+import { addFavouriteTrigger, removeFavouriteTrigger } from './actions';
 import NaviBar from './NaviBar';
+import { getFavouriteComicIds } from './selectors';
 
-const Render = (props) => {
+export const Render = (props) => {
+  const {
+    favouriteComics,
+    metadata,
+  } = props;
+
   const {
     alt,
     comicId,
@@ -14,7 +22,7 @@ const Render = (props) => {
     loading,
     title,
     transcript,
-  } = props;
+  } = metadata;
 
   let comicImage;
 
@@ -54,6 +62,18 @@ const Render = (props) => {
     getComic(randomComic);
   };
 
+  const isFavourite = favouriteComics.find(id => id === comicId);
+
+  const onClickFavourite = () => {
+    const { addFavourite, removeFavourite } = props;
+
+    if (isFavourite) {
+      removeFavourite(comicId);
+    } else {
+      addFavourite(comicId, date, img, title, transcript);
+    }
+  };
+
   const naviBar = (
     <NaviBar
       current={comicId}
@@ -66,12 +86,26 @@ const Render = (props) => {
     />
   );
 
+  const iconIsNotFavourite = <Icon type="heart" />;
+  const iconIsFavourite = <Icon type="heart" theme="twoTone" twoToneColor="#eb2f96" />;
+  let iconFavourite;
+
+  if (isFavourite) {
+    iconFavourite = iconIsFavourite;
+  } else {
+    iconFavourite = iconIsNotFavourite;
+  }
+
   return (
     <React.Fragment>
-      <h1>XKCD Comic</h1>
-      <h2>{title}</h2>
+      <div className="title">
+        <h2>{title}</h2>
+        <Button onClick={onClickFavourite}>
+          {iconFavourite}
+        </Button>
+      </div>
       <div className="comic-container">
-        <div>{date}</div>
+        <div className="date">{date}</div>
         {naviBar}
         <div className="comic">
           {comicImage}
@@ -84,28 +118,46 @@ const Render = (props) => {
 };
 
 Render.propTypes = {
-  alt: PropTypes.string,
-  comicId: PropTypes.number,
-  date: PropTypes.string,
-  error: PropTypes.string,
+  addFavourite: PropTypes.func.isRequired,
+  favouriteComics: PropTypes.instanceOf(Array),
   getComic: PropTypes.func.isRequired,
-  img: PropTypes.string,
-  latestComic: PropTypes.number,
-  loading: PropTypes.bool,
-  title: PropTypes.string,
-  transcript: PropTypes.string,
+  metadata: PropTypes.shape({
+    alt: PropTypes.string,
+    comicId: PropTypes.number,
+    date: PropTypes.string,
+    error: PropTypes.string,
+    img: PropTypes.string,
+    latestComic: PropTypes.number,
+    loading: PropTypes.bool,
+    title: PropTypes.string,
+    transcript: PropTypes.string,
+  }),
+  removeFavourite: PropTypes.func.isRequired,
 };
 
 Render.defaultProps = {
-  alt: '',
-  comicId: 0,
-  date: '',
-  error: '',
-  img: '',
-  latestComic: 0,
-  loading: false,
-  title: '',
-  transcript: '',
+  favouriteComics: [],
+  metadata: {
+    alt: '',
+    comicId: 0,
+    date: '',
+    error: '',
+    img: '',
+    latestComic: 0,
+    loading: false,
+    title: '',
+    transcript: '',
+  },
 };
 
-export default Render;
+const mapStateToProps = state => ({
+  favouriteComics: getFavouriteComicIds(state),
+});
+
+const mapDispatchToProps = dispatch => ({
+  addFavourite: (comicId, date, img, title, transcript) =>
+    dispatch(addFavouriteTrigger(comicId, date, img, title, transcript)),
+  removeFavourite: comicId => dispatch(removeFavouriteTrigger(comicId)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Render);
