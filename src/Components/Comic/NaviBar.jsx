@@ -1,6 +1,7 @@
 import { Button, Icon } from 'antd';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { withRouter } from 'react-router';
 
 const NaviBar = (props) => {
   const isDisableFirstButton = () => {
@@ -21,6 +22,11 @@ const NaviBar = (props) => {
 
   const isDisableLatestButton = () => {
     return isDisableNextButton();
+  }
+
+  const onClickFavourites = () => {
+    const { history } = props;
+    history.push('/favourites');
   }
 
   const {
@@ -51,6 +57,9 @@ const NaviBar = (props) => {
         <Button title="random" onClick={onClickRandom}>
           <Icon type="question" />
         </Button>
+        <Button onClick={onClickFavourites} title="favourites">
+          <Icon theme="twoTone" type="heart" />
+        </Button>
         <Button
           disabled={isDisableNextButton()}
           onClick={onClickNext}
@@ -73,6 +82,7 @@ const NaviBar = (props) => {
 NaviBar.propTypes = {
   current: PropTypes.number,
   first: PropTypes.number,
+  history: PropTypes.instanceOf(Object),
   latest: PropTypes.number,
   onClickFirst: PropTypes.func.isRequired,
   onClickPrevious: PropTypes.func.isRequired,
@@ -84,7 +94,8 @@ NaviBar.propTypes = {
 NaviBar.defaultProps = {
   current: 0,
   first: 1,
+  history: {},
   latest: 0,
 };
 
-export default NaviBar;
+export default withRouter(NaviBar);
