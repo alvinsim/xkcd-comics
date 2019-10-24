@@ -1,10 +1,32 @@
 #+TITLE: XKCD Comics
 
-XKCD Comics is a simple REACT application that queries the [[https://xkcd.com/json.html][XKCD API]] to get the metadata of a comic.
+XKCD Comics is a simple REACT application that queries the [[https://xkcd.com/json.html][XKCD API]] to get the metadata of a comic and displays it on the page.
 
-This project is something I did for fun but mainly an excuse to do something with [[https://reactjs.org/][React]].
+This project is something I did for fun but mainly an excuse to do something (/from scratch/) with [[https://reactjs.org/][React]].
 
-** Getting Started
+** About this application
+
+This application allows you to browse through all of the XKCD comics.
+
+[[file:xkcd-comics.png][XKCD Comics]]
+
+On first load, it shows the latest comic. By using the navigation bar, you can view the previous or next comics, first and latest, and also have it randomly show a comic.
+
+You can also favourite a comic, by clicking on the 'heart' icon next to the comic's title. This will save the comic's metadata to the =redux= store.
+
+Clicking on the BLUE 'heart' button on the navigation bar will show you all your favourite comics. Because these data is not persisted to a database, all will be cleared when the application restarts.
+
+[[file:xkcd-favourites.png][XKCD Favourites]]
+
+This application uses
+- =antd= for the UI.
+- =less= for styling.
+- =react-router-dom= for routing to the comic page and the favourite page.
+- =redux= to persist a comic's metadata when the 'heart' icon is clicked.
+- =redux-saga= for the redux middleware.
+- =jest= for testing -- tests for the reducer and saga; and also snapshots..
+
+** Getting started
 
 If you want to play around with this project, clone this repository to your local machine.
 
@@ -18,7 +40,7 @@ Once that is sorted, you can proceed to install the dependencies using either =n
 
 Because this application is calling an external API, your web browser will block the request. One option is to install a 'CORS' browser extension and add 'https://xkcd.com/' to the white list.
 
-On Firefox, I use [[https://addons.mozilla.org/en-US/firefox/addon/cross-domain-cors][Cross Domain - CORS]]; and on Chromium I use [[https://chrome.google.com/webstore/detail/moesif-orign-cors-changer/digfbfaphojjndkpccljibejjbppifbc][Moesif Origin & CORS Changer]].
+On Firefox, I use [[https://addons.mozilla.org/en-US/firefox/addon/cross-domain-cors][Cross Domain - CORS]]; and [[https://chrome.google.com/webstore/detail/moesif-orign-cors-changer/digfbfaphojjndkpccljibejjbppifbc][Moesif Origin & CORS Changer]] on Chromium.
 
 ** License
 
