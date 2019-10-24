@@ -8,7 +8,7 @@ This project is something I did for fun but mainly an excuse to do something (/f
 
 This application allows you to browse through all of the XKCD comics.
 
-[[file:xkcd-comics.png][XKCD Comics]]
+[[file:xkcd-comics.png]]
 
 On first load, it shows the latest comic. By using the navigation bar, you can view the previous or next comics, first and latest, and also have it randomly show a comic.
 
@@ -16,7 +16,7 @@ You can also favourite a comic, by clicking on the 'heart' icon next to the comi
 
 Clicking on the BLUE 'heart' button on the navigation bar will show you all your favourite comics. Because these data is not persisted to a database, all will be cleared when the application restarts.
 
-[[file:xkcd-favourites.png][XKCD Favourites]]
+[[file:xkcd-favourites.png]]
 
 This application uses
 - =antd= for the UI.
