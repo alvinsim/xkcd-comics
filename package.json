@@ -8,7 +8,7 @@
     "build": "craco build",
     "test": "craco test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "eslint.js src/"
+    "lint": "$(npm bin)/eslint ./src/"
   },
   "pre-commit": [
     "lint"
