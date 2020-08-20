@@ -1,7 +1,5 @@
 #+TITLE: XKCD Comics
 
-[![[\[!\[deepcode\](https://www.deepcode.ai/api/gh/badge?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF0Zm9ybTEiOiJnaCIsIm93bmVyMSI6ImFsdmluc2ltIiwicmVwbzEiOiJ4a2NkLWNvbWljcyIsImluY2x1ZGVMaW50IjpmYWxzZSwiYXV0aG9ySWQiOjIxOTEwLCJpYXQiOjE1OTc5MjczMjd9.spT062mGL_8rjG5RTBWs0IgwCbGaZQgNslmyqrtC9DM)\](https://www.deepcode.ai/app/gh/alvinsim/xkcd-comics/_/dashboard?utm_content=gh%2Falvinsim%2Fxkcd-comics)][deepcode]]
-
 XKCD Comics is a simple REACT application that queries the [[https://xkcd.com/json.html][XKCD API]] to get the metadata of a comic and displays it on the page.
 
 This project is something I did for fun but mainly an excuse to do something (/from scratch/) with [[https://reactjs.org/][React]].
