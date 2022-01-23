@@ -1,4 +1,5 @@
-import { Button, Icon, Result, Spin } from 'antd';
+import { Button, Result, Spin } from 'antd';
+import { HeartOutlined, HeartTwoTone } from '@ant-design/icons';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { connect } from 'react-redux';
@@ -86,8 +87,8 @@ export const Render = (props) => {
     />
   );
 
-  const iconIsNotFavourite = <Icon type="heart" />;
-  const iconIsFavourite = <Icon type="heart" theme="twoTone" twoToneColor="#eb2f96" />;
+  const iconIsNotFavourite = <HeartOutlined />;
+  const iconIsFavourite = <HeartTwoTone twoToneColor="#eb2f96" />;
   let iconFavourite;
 
   if (isFavourite) {

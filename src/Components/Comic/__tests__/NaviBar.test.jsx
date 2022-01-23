@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import renderer from 'react-test-renderer';
 import NaviBar from '../NaviBar';
 
+const ReactTestRenderer = require('react-test-renderer');
+
 test('Next and Latest buttons are disabled when current comic is the latest', () => {
-  const component = renderer.create(
+  const component = ReactTestRenderer.create(
     <BrowserRouter>
       <NaviBar
         current={5}
@@ -22,7 +23,7 @@ test('Next and Latest buttons are disabled when current comic is the latest', ()
 });
 
 test('Last and Previous buttons are disabled when current is the first comic', () => {
-  const component = renderer.create(
+  const component = ReactTestRenderer.create(
     <BrowserRouter>
       <NaviBar
         current={1}
