@@ -1,7 +1,16 @@
-import { Button, Icon } from 'antd';
+import { Button } from 'antd';
+import {
+  DoubleLeftOutlined,
+  DoubleRightOutlined,
+  HeartTwoTone,
+  LeftOutlined,
+  QuestionOutlined,
+  RightOutlined
+}
+  from '@ant-design/icons';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { withRouter } from 'react-router';
+import { withRouter } from '@Utilities/withRouter';
 
 const NaviBar = (props) => {
   const isDisableFirstButton = () => {
@@ -45,34 +54,34 @@ const NaviBar = (props) => {
           onClick={onClickFirst}
           title="first"
         >
-          <Icon type="double-left" />
+          <DoubleLeftOutlined />
         </Button>
         <Button
           disabled={isDisablePreviousButton()}
           onClick={onClickPrevious}
           title="previous"
         >
-          <Icon type="left" />
+          <LeftOutlined />
         </Button>
         <Button title="random" onClick={onClickRandom}>
-          <Icon type="question" />
+          <QuestionOutlined />
         </Button>
         <Button onClick={onClickFavourites} title="favourites">
-          <Icon theme="twoTone" type="heart" />
+          <HeartTwoTone />
         </Button>
         <Button
           disabled={isDisableNextButton()}
           onClick={onClickNext}
           title="next"
         >
-          <Icon type="right" />
+          <RightOutlined />
         </Button>
         <Button
           disabled={isDisableLatestButton()}
           onClick={onClickLatest}
           title="latest"
         >
-          <Icon type="double-right" />
+          <DoubleRightOutlined />
         </Button>
       </Button.Group>
     </div>
